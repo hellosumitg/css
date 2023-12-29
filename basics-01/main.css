@@ -1,3 +1,9 @@
 section {
     background: #ff0000;
 } 
+
+h1 {
+    color: white;
+    /* Added from Google fonts */
+    font-family: 'Anton', sans-serif;
+}
