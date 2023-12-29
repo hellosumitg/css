@@ -2,6 +2,10 @@
     background: #ff0000;
 }  */
 
+/* 
+    Order of specificity of different Rules in CSS:-
+    `Inline Styles` > `#ID selectors` > `.class, :pseudo-class and [attribute] selectors` > `<Tag> and ::pseudo-element selectors`
+*/
 #product-overview {
     background: #ff0000;
 }
@@ -12,6 +16,10 @@ h1 {
     font-family: 'Anton', sans-serif;
 }
 
-.section-title{
+.section-title {
     color: #2ddf5c;
+}
+
+h1 {
+    font-family: sans-serif;
 }
