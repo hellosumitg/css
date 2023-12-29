@@ -6,6 +6,14 @@
     Order of specificity of different Rules in CSS:-
     `Inline Styles` > `#ID selectors` > `.class, :pseudo-class and [attribute] selectors` > `<Tag> and ::pseudo-element selectors`
 */
+
+/* 
+    inheritance has the lowest specificity of all hence below Rule will not be applied which can be seen in `Elements' Styles section` section of Developer Tools 
+*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 #product-overview {
     background: #ff0000;
 }
@@ -20,6 +28,7 @@ h1 {
     color: #2ddf5c;
 }
 
-h1 {
+/* h1 {
     font-family: sans-serif;
-}
+} */
+
