@@ -1,9 +1,17 @@
-section {
+/* section {
     background: #ff0000;
-} 
+}  */
+
+#product-overview {
+    background: #ff0000;
+}
 
 h1 {
     color: white;
     /* Added from Google fonts */
     font-family: 'Anton', sans-serif;
+}
+
+.section-title{
+    color: #2ddf5c;
 }
