@@ -18,7 +18,12 @@ body {
     background: #ff0000;
 }
 
-h1 {
+/* 
+    below using `combinators` means combining 2 or more properties, 
+    it also `increases the specificity` over other `Rules` as it has more information than others 
+    and this below combinator also known as `Descendant` combinators and there are total 4 types of combinators
+*/
+#product-overview h1 {
     color: white;
     /* Added from Google fonts */
     font-family: 'Anton', sans-serif;
@@ -26,6 +31,8 @@ h1 {
 
 .section-title {
     color: #2ddf5c;
+    /* below property will help us to use the inherited font that was declared for `body` */
+    /* font-family: inherit;  */
 }
 
 /* h1 {
