@@ -12,6 +12,8 @@
 */
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    /* Margin Collapsing:- by default browser intend to overlap margins of two adjacent box elements*/
 }
 
 #product-overview {
@@ -20,7 +22,7 @@ body {
     border-style: solid;
     border-color: black;
     border-width: 5px;
-    margin: 20px;
+    margin: 20px; 
 }
 
 /* 
