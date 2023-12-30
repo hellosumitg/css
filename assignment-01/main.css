@@ -1,4 +1,4 @@
-/* Task 4 */
+/* Task 5 */
 body {
     font-family: sans-serif;
 }
@@ -22,7 +22,7 @@ code {
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 
-/* Task 5 */
+/* Task 6 */
 /* 
     below is `Adjacent Sibling combinator`:-
     1) Elements share the same parent.
@@ -47,7 +47,7 @@ li ~ li {
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 
-/* Task 6 */
+/* Task 7 */
 /* 
     below is `Direct Child or Child combinator`:-
     1) Second element is a direct child of first element on which all conditions are applicable
