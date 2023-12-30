@@ -21,7 +21,8 @@ body {
 /* 
     below using `combinators` means combining 2 or more properties, 
     it also `increases the specificity` over other `Rules` as it has more information than others 
-    and this below combinator also known as `Descendant` combinators and there are total 4 types of combinators
+    and this below combinator also known as `Descendant` combinators(in this Second element is a descendant of the first element on which all the conditions are applicable)
+    there are total 4 types of combinators, one discussed above other 3 will be discussed in assignment
 */
 #product-overview h1 {
     color: white;

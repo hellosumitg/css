@@ -1,0 +1,71 @@
+/* Task 4 */
+body {
+    font-family: sans-serif;
+}
+
+/* Task 3 */
+.second-li {
+    color: green;
+}
+
+/* Task 1 */
+#assignment-instructions {
+    color:blue;
+    font-family: sans-serif;
+}
+
+/* Task 2 */
+code {
+    color: red;
+    font-family: monospace;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* Task 5 */
+/* 
+    below is `Adjacent Sibling combinator`:-
+    1) Elements share the same parent.
+    2) Second element comes immediately after first element on which all the conditions are applicable
+*/
+/* 
+    li + li {
+    color: white;
+    background: black;
+} 
+*/
+
+/* 
+    below is `General Sibling combinator`:- 
+    1) Elements share the same parent.
+    2) Second element comes after first element(but not supposed to be the immediate one) on which all the conditions are applicable
+*/
+li ~ li {
+    color: white;
+    background: black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Task 6 */
+/* 
+    below is `Direct Child or Child combinator`:-
+    1) Second element is a direct child of first element on which all conditions are applicable
+*/
+/* 
+    ol > li {
+    color: white;
+    background: black;
+} 
+*/
+
+/* 
+    below is `Descendant combinator`:-
+    1) Second element is a descendant of the first element on which all the conditions are applicable
+*/
+ol li {
+    color: white;
+    background: black;
+} 
+
+
