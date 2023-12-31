@@ -10,6 +10,16 @@
 /* 
     inheritance has the lowest specificity of all hence below Rule will not be applied which can be seen in `Elements' Styles section` section of Developer Tools 
 */
+
+/* 
+    We would use Universal Selector `*{}` as if we used this `box-sizing` in `body` it will be inherited in different elements but again `content-box` situation will be handled
+    and not the `border-box`(i.e including `content`, `padding` and `border`). So as to implement this condition evenly on all elements and not using inheritance.
+*/
+* {
+    /* below anywhere we use the width and height is by default applicable on `content-box` which doesn't include padding and border (i.e `border-box`) but we can set it by using this*/
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -18,16 +28,17 @@ body {
 
 #product-overview {
     background: #ff0000;
-    padding: 20px;
+    padding: 10px;
     /* 
         border-style: solid;
         border-color: black;
         border-width: 5px;
     */
     border: 5px solid black;
-    margin: 20px; 
+    /* margin is not required in box-sizing */
+    margin: 10px; 
     /* width: 50%; */
-    width: 700px;
+    width: 100%;
     height: 528px;
 }
 
