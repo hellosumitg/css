@@ -103,6 +103,7 @@ body {
     padding: 0;
     /* below is used for removing any type of bullet points from the list */
     list-style: none;
+    
 }
 .main-nav__item {
     /* 
@@ -110,4 +111,11 @@ body {
         i.e we can style the elements like block level but they sit to each other like an inline element
     */
     display: inline-block;
+    margin: 0 16px;
+}
+
+/* On Performance stand point if we are creating a website like `faceBook` then assigning `class=""` to the <a> would be good */
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
 }
