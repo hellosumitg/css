@@ -1,0 +1,77 @@
+/* Task1: Build a nice box (div) with some content (e.g. "I'm a box!"), padding, a border (style it as you want) and some margin. */
+/* .box1 {
+    padding: 10px;
+    border: 3px solid red;
+    margin: 20px;
+} */
+
+/* Task2: If you didn't do it already: Set different padding and margin for the four different sides of the box. */
+.box {
+    /* padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px; */
+
+    padding: 5px 10px 15px 20px;
+    
+    /* border-top: 3px solid red;
+    border-right: 3px solid red;
+    border-bottom: 3px solid red;
+    border-left: 3px solid red; */
+    
+    border: 3px solid red;
+
+    /* border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: red; */
+    
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: red; */
+    
+    /* margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px; */
+
+    margin: 10px 20px 30px 40px;
+    /* below is the part of Task6: Position the two boxes next to each other. */
+    height: 300px;
+    width: 48%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+}
+
+/* Task3: Add the same box below the first box and note if you can identify any strange behavior. */
+/* So here we see `Margin Collapsing` where bigger `margin` of `box1` "overtakes" below `box2's` smaller `margin`. */
+
+/* Task4: Give the first box a height of 100% of the window height. */
+html, 
+body {
+    height: 100%;
+}
+/* 
+#first-box {
+    height: 100%;
+    box-sizing: border-box;
+} */
+
+/* Task5: Set the first box back to a more reasonable height of 300px and set its width to 50%. */
+/* #first-box {
+    height: 300px;
+    width: 50%;
+    box-sizing: border-box;
+} */
+
+/* Task7: "Hide" box number 1 and see how that changes the page. */
+#first-box {
+    /* check both by commenting one and see other */
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+/* Task8: Add a hover effect to the the LAST div element. Use pseudo-classes for that. */
+div:last-of-type:hover {
+    border-color: green;
+}
