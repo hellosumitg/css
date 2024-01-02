@@ -42,6 +42,12 @@ body {
     
 }
 
+.section-title {
+    color: #2ddf5c;
+    /* below property will help us to use the inherited font that was declared for `body` */
+    /* font-family: inherit;  */
+}
+
 /* 
     below using `combinators` means combining 2 or more properties, 
     it also `increases the specificity` over other `Rules` as it has more information than others 
@@ -54,13 +60,43 @@ body {
     font-family: 'Anton', sans-serif;
 }
 
-.section-title {
-    color: #2ddf5c;
-    /* below property will help us to use the inherited font that was declared for `body` */
-    /* font-family: inherit;  */
-}
-
 /* h1 {
     font-family: sans-serif;
 } */
 
+.main-header {
+    background: #2ddf5c;
+    /* 
+        padding: top  right  bottom  left;
+        padding: top&bottom  right&left;
+        padding: top&right&bottom&left;
+    */
+    padding: 8px 16px;
+    width: 100%;
+}
+
+/* `Direct Child or Child combinator` */
+.main-header > div {
+    display: inline-block;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    /* below subtracting width of `uHost` <div>(i.e 54px) from 100% width */
+    width: calc(100% - 54px);
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    /* below is used for removing any type of bullet points from the list */
+    list-style: none;
+}
+.main-nav__item {
+    /* 
+        below will help us have both inline and block level properties
+        i.e we can style the elements like block level but they sit to each other like an inline element
+    */
+    display: inline-block;
+}
