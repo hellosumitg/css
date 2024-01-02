@@ -20,7 +20,7 @@ a {
 } */
 
 /* 
-    Here we not putting any `white-space` between `a and .active` as then it will selects any element that is nested in the <a> tag and have `.active` class.
+    Here we not putting any `white-space` between `a and .active` as then it will selects any element that is nested in the <a> tag or descendants of <a> and have `.active` class.
     As we want only <a> tags that has `.active` class so remove the `white-space`
 */
 a.active {
