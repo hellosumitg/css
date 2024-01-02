@@ -19,8 +19,24 @@ a {
 
 } */
 
+/* 
+    Here we not putting any `white-space` between `a and .active` as then it will selects any element that is nested in the <a> tag and have `.active` class.
+    As we want only <a> tags that has `.active` class so remove the `white-space`
+*/
 a.active {
     color: #521751;
+}
+
+/* below pseudo class `:not()` for selecting any <a> tag that doesn't have `.active` or `class="active"` */
+/* 
+a:not(.active) {
+    color: blue;
+} 
+but below also results the same let's see
+*/
+
+a {
+    color: blue;
 }
 
 /* Multiple CSS classes */
@@ -48,4 +64,10 @@ a.active {
     CSS ID Selectors-   a) Only used once per page
                         b) Also got non-CSS meaning (eg. on-page link as here in this page HTML `#intro` and `#outro` is used as links)
                         c) Use if available anyways
+*/
+
+/* 
+    Before using any CSS specifications please check that it works fine on many browser and it can be done by
+    checking the `Browser compatibility` section on MDN website or
+    check on this `https://caniuse.com/` and this website also shows how much market you will reach using any specific specification
 */
