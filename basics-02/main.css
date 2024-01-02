@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    margin-bottom: 16px;
+    background: #fa923f;
+    padding: 8px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+/* Combined Selectors */
+/* a#some-id {
+
+} */
+
+a.active {
+    color: #521751;
+}
+
+/* Multiple CSS classes */
+.main-section {
+    height: 800px;
+    /* 
+        below `!important` used surpass any specificity order to override it.
+        So, don't use `!important` as it makes the code tough to understand
+    */
+    border: 1px solid #ccc !important;
+    padding: 16px;
+}
+
+.highlighted {
+    border: 2px solid #fa923f;
+    height: 200px;
+}
+
+
+/* 
+    CSS Class Selectors-a) Re-usable
+                        b) Allow you to "mark" and name things for styling purposes only
+                        c) Most used selector type
+
+    CSS ID Selectors-   a) Only used once per page
+                        b) Also got non-CSS meaning (eg. on-page link as here in this page HTML `#intro` and `#outro` is used as links)
+                        c) Use if available anyways
+*/
