@@ -119,3 +119,33 @@ body {
     text-decoration: none;
     color: #0e4f1f;
 }
+
+/* 
+    `::after`, `::before` Pseudo Elements actually allow us to render content through CSS and this should only be helpful content which adds to the design,
+    not crucial page content(as theses are handled by HTML) just for accessibility reason.
+*/
+/* .main-nav__item a::after {
+    content: " (Link)";
+    color: red;
+} */
+
+/* 
+    Pseudo Classes- `pseudo :class name` (defines style of `special state` of an element eg. `:hover`, `:active`, `:focus` etc)
+    Pseudo Elements : `pseudo ::element name` (defines style of a `specific part` of an element eg. `::after`, `::before`, `::first-letter`, `::first-line` etc)
+*/
+
+/* Adding Pseudo Classes */
+.main-nav__item a:hover {
+    color: white;
+}
+
+.main-nav__item a:active {
+    color: white;
+}
+
+/* Adding Pseudo Element */
+/* p::first-letter {
+    color: red;
+    font-size: 20px;
+} */
+
